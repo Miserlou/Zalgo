@@ -10,9 +10,9 @@ with open(os.path.join(os.path.dirname(__file__), 'requirements.txt')) as f:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='zalgo',
+    name='zalgotext',
     version='0.1.0',
-    packages=['zalgotext'],
+    packages=['zalgo'],
     install_requires=required,
     include_package_data=True,
     license='MIT License',

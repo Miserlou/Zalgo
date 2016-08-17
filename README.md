@@ -4,7 +4,7 @@ Command line zalgo.
 
 # Installation
 
-    pip install zalgo
+    pip install zalgotext
 
 # Usage
 
