@@ -23,12 +23,12 @@ setup(
     author_email='rich@openwatch.net',
     entry_points={
         'console_scripts': [
-            'zalgo=zalgo.__init__:command_line_runner',
+            'zalgo=zalgo.__main__:command_line_runner',
         ]
     },
     classifiers=[
         'Environment :: Console',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
