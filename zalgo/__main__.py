@@ -8,7 +8,7 @@ from . import zalgo
 
 
 def convert_zalgo(text, intensity=50, copy=False):
-    input_text = u''.join(text)
+    input_text = u' '.join(text)
     zalgotext = zalgo.zalgo(input_text, intensity)
 
     if copy:
