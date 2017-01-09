@@ -5,11 +5,17 @@
 
 from random import randint, choice
 
+try:
+    chr = unichr
+except NameError:
+    pass  # Cause we're on Python3
+
+
 def zalgo(text, intensity=50):
     zalgo_threshold = intensity
-    zalgo_chars = [unichr(i) for i in range(0x0300, 0x036F + 1)]
+    zalgo_chars = [chr(i) for i in range(0x0300, 0x036F + 1)]
     zalgo_chars.extend([u'\u0488', u'\u0489'])
-    source = text.decode('utf8')
+    source = text
     if not _is_narrow_build:
         source = _insert_randoms(source)
     zalgoized = []
@@ -19,7 +25,7 @@ def zalgo(text, intensity=50):
         for _ in range(zalgo_num):
             zalgoized.append(choice(zalgo_chars))
     response = choice(zalgo_chars).join(zalgoized)
-    return response.encode('utf8', 'ignore')
+    return response
 
 
 def _insert_randoms(text):
@@ -34,7 +40,7 @@ def _insert_randoms(text):
 
 def _is_narrow_build():
     try:
-        unichr(0x10000)
+        chr(0x10000)
     except ValueError:
         return True
     return False
