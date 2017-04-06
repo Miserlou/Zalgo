@@ -11,7 +11,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='zalgotext',
-    version='0.1.0',
+    version='0.2.0',
     packages=['zalgo'],
     install_requires=required,
     include_package_data=True,
@@ -23,12 +23,12 @@ setup(
     author_email='rich@openwatch.net',
     entry_points={
         'console_scripts': [
-            'zalgo=zalgo.__init__:command_line_runner',
+            'zalgo=zalgo.__main__:command_line_runner',
         ]
     },
     classifiers=[
         'Environment :: Console',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
@@ -38,7 +38,7 @@ setup(
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
 )
