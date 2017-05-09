@@ -21,4 +21,10 @@ č̻̻t̻̩̻̻͍̻̻̭̻̻̄̄̎h̨̻̻̻̻̻̙̻̻̻̣̻͓̻̻̅ͣ̀̂̆̾ͅ�
 
 And that's all it does!
 
+# See Also
+
+* [Emo](https://github.com/Miserlou/Emo)
+* [Vape](https://github.com/Miserlou/Vape)
+* [Trapify](https://github.com/Miserlou/Trapify)
+
 Rich Jones 2015. Based on [@mjgiarlo](https://github.com/mjgiarlo)'s pyzalgo.
